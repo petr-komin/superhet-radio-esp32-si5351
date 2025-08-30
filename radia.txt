@@ -1,0 +1,20 @@
+Pro Český rozhlas Plus a další stanice Českého rozhlasu můžeš použít tyto streamovací URL adresy. Tyto streamy jsou ve formátech MP3 (128 kbps) a AAC (160 kbps high a 64 kbps low), které by měly fungovat na ESP32 (např. s knihovnami jako Audio nebo podobnými pro streamování).
+
+Použij HTTPS protokol pro bezpečnost. Streamy jsou z oficiálního zdroje Českého rozhlasu.
+
+| Stanice | MP3 (128 kbps) | AAC High (160 kbps) | AAC Low (64 kbps) |
+|---------|----------------|---------------------|-------------------|
+| ČRo Plus | https://rozhlas.stream/plus.mp3 | https://rozhlas.stream/plus_high.aac | https://rozhlas.stream/plus_low.aac |
+| ČRo Radiožurnál | https://rozhlas.stream/radiozurnal.mp3 | https://rozhlas.stream/radiozurnal_high.aac | https://rozhlas.stream/radiozurnal_low.aac |
+| ČRo Radiožurnál Sport | https://rozhlas.stream/radiozurnal_sport.mp3 | https://rozhlas.stream/radiozurnal_sport_high.aac | https://rozhlas.stream/radiozurnal_sport_low.aac |
+| ČRo Dvojka | https://rozhlas.stream/dvojka.mp3 | https://rozhlas.stream/dvojka_high.aac | https://rozhlas.stream/dvojka_low.aac |
+| ČRo Vltava | https://rozhlas.stream/vltava.mp3 | https://rozhlas.stream/vltava_high.aac | https://rozhlas.stream/vltava_low.aac |
+| ČRo D-dur | https://rozhlas.stream/ddur.mp3 | https://rozhlas.stream/ddur_high.aac | https://rozhlas.stream/ddur_low.aac |
+| ČRo Jazz | https://rozhlas.stream/jazz.mp3 | https://rozhlas.stream/jazz_high.aac | https://rozhlas.stream/jazz_low.aac |
+| ČRo Radio Wave | https://rozhlas.stream/radio_wave.mp3 | https://rozhlas.stream/radio_wave_high.aac | https://rozhlas.stream/radio_wave_low.aac |
+| ČRo Pohoda | https://rozhlas.stream/pohoda.mp3 | https://rozhlas.stream/pohoda_high.aac | https://rozhlas.stream/pohoda_low.aac |
+| ČRo Rádio Junior | https://rozhlas.stream/radio_junior.mp3 | https://rozhlas.stream/radio_junior_high.aac | https://rozhlas.stream/radio_junior_low.aac |
+| ČRo Rádio Junior+ | https://rozhlas.stream/radio_junior.mp3 | https://rozhlas.stream/radio_junior_high.aac | https://rozhlas.stream/radio_junior_low.aac |
+| Radio Prague International | https://rozhlas.stream/radio_prague_int.mp3 | https://rozhlas.stream/radio_prague_int_high.aac | https://rozhlas.stream/radio_prague_int_low.aac |
+
+Tyto URL by měly být stabilní, ale pokud nefungují, zkuste alternativy jako https://api.play.cz/radio/croplus128.mp3.m3u (pro Plus, s podobným vzorem pro ostatní, např. crodvojka128.mp3.m3u pro Dvojku). Pro implementaci na ESP32 doporučuji otestovat streamy v nástrojích jako VLC nejdřív, aby sis ověřil, že fungují. Pokud potřebuješ víc detailů nebo URL pro jiné české rádia (např. soukromá jako Evropa 2), napiš.
