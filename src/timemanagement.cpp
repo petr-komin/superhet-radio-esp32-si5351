@@ -7,13 +7,11 @@
 
 #include <time.h>
 #include <WiFi.h>
-//Connect to WiFi (if you want to synchronize time with an NTP server):
-const char* ssid = "REDACTED_SSID";
-const char* password = "REDACTED_PASSWORD";
+#include "secrets.h"
 
 bool Timemanagement::connectToWiFi() {
     Serial.print("Connecting to WiFi");
-    WiFi.begin(ssid, password);
+    WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
     int attempts = 0;
     while (WiFi.status() != WL_CONNECTED && attempts < 10) {
         delay(1000);
